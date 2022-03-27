@@ -9,3 +9,6 @@ tags = {
     Name = "insyance by terraform"
   }
 }
+output "Public_ip" {
+  value = "${aws_instance.myec2.public_ip}"
+}
